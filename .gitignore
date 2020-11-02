@@ -1,0 +1,12 @@
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+source/css/*.css
+build/
+source/img/min
+Thumbs.db
+gitignore.md

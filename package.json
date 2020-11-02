@@ -1,0 +1,72 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-changed": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-csslint": "^1.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "imagemin-pngquant": "^9.0.0",
+    "postcss-reporter": "^6.0.1",
+    "postcss-scss": "^2.1.1",
+    "posthtml-include": "^1.4.3",
+    "stylelint": "^13.7.0"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp watch",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.9"
+  },
+  "dependencies": {
+    "david": "^12.0.0",
+    "gift": "^0.10.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-pngquant": "^1.0.13",
+    "imagemin-jpeg-recompress": "^7.0.0",
+    "pump": "^3.0.0"
+  }
+}
